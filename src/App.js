@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header';
+import Card from './components/Card';
+import Footer from './components/Footer';
+import pic1 from './assets/leaves.jpg';
+import pic2 from './assets/keyboard.jpg';
+import pic3 from './assets/office.jpg';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container min-vh-100" style={{}}>
+        <div className="row card-deck h-100" style={{}}>
+          <Header />
+          <Card title='About' image={pic1}/>
+          <Card title='Skills' image={pic2}/>
+          <Card title='Experience' image={pic3}/>
+        </div>
+        <Footer />
+      </div>
     </div>
   );
 }
