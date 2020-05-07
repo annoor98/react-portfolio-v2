@@ -9,8 +9,8 @@ import pic3 from './assets/office.jpg';
 function App() {
   return (
     <div className="App">
-      <div className="container min-vh-100" style={{}}>
-        <div className="row card-deck h-100" style={{}}>
+      <div className="container min-vh-100">
+        <div className="row card-deck h-100">
           <Header />
           <Card title='About' image={pic1}/>
           <Card title='Skills' image={pic2}/>
